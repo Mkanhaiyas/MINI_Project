@@ -1,0 +1,48 @@
+.blog {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(101, 62, 177, 1),
+    rgb(13, 9, 71),
+    rgba(15, 22, 90, 1),
+    rgba(48, 38, 126, 1)
+  );
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  position: fixed;
+  top: 60px;
+  width: 100%;
+  height: 100vh;
+}
+
+.titles {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  padding: 40px 0;
+  font-weight: 600;
+}
+
+.para {
+  width: 50%;
+  height: 100vh;
+  padding: 50px;
+  line-height: 1.5em;
+}
+
+.img2 {
+  width: 35%;
+  position: absolute;
+  top: 23%;
+  right: 8%;
+  height: 50vh;
+  border-radius: 10px;
+}
+
+.para p {
+  color: white;
+  line-height: 1.5em;
+  text-align: justify;
+}

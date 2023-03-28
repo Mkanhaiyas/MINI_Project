@@ -2,10 +2,15 @@ import Express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
 import postRoutes from "./route.js";
+import showRoutes from "./route2.js";
+import messageRoutes from "./route3.js";
 const app = Express();
 app.use(Express.json());
 app.use(cors());
 app.use("/posts", postRoutes);
+app.use("/logdata", showRoutes);
+app.use("/message", messageRoutes);
+
 const ATLAS_URI =
   "mongodb+srv://mkanhaiyas:mkanhaiyas149@studentrecord.3hcnmbd.mongodb.net/?retryWrites=true&w=majority";
 const port = process.env.PORT || 5000;

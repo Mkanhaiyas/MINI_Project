@@ -1,19 +1,20 @@
 import Express from "express";
 import mongoose from "mongoose";
+import PostMessage from "./schema.js";
 const router = Express.Router();
 
-const postSchema = mongoose.Schema({
-  profession: String,
-  firstname: String,
-  lastname: String,
-  email: String,
-  password: String,
-  createdAt: {
-    type: Date,
-    default: new Date(),
-  },
-});
-var PostMessage = mongoose.model("PostMessage", postSchema);
+// const postSchema = mongoose.Schema({
+//   profession: String,
+//   firstname: String,
+//   lastname: String,
+//   email: String,
+//   password: String,
+//   createdAt: {
+//     type: Date,
+//     default: new Date(),
+//   },
+// });
+// var PostMessage = mongoose.model("PostMessage", postSchema);
 
 export const getPosts = async (req, res) => {
   try {
