@@ -97,9 +97,6 @@ export default function BasicTable({ header, Index, Size }) {
                 <TableCell align="left">{row.firstname}</TableCell>
                 <TableCell align="left">{row.lastname}</TableCell>
                 <TableCell align="left">{row.email}</TableCell>
-                <TableCell align="left" className="Details">
-                  Details
-                </TableCell>
               </TableRow>
             ))}
           </TableBody>

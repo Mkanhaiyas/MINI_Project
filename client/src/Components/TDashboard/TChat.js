@@ -10,6 +10,24 @@ function TChat() {
     message: "",
   });
 
+  const [newdata, setnewdata] = useState([]);
+
+  const response = async () => {
+    const data = await (await fetch(`${api}/message/`)).json();
+    //const Token = localStorage.getItem("token");
+    //const currentUser = data.filter((res) => res.id_2 === Token).ToList();
+    // const uniqueData = data.filter(
+    //   (res) => res.profession === currentProfession
+    // );
+    setnewdata(data.reverse());
+  };
+
+  //const individualData = data.find((result) => result.profession === "teacher");
+  //console.log(individualData);
+  React.useEffect(() => {
+    response();
+  });
+
   const [user, setuser] = useState([]);
   const Verify = async () => {
     const Token = localStorage.getItem("token");
@@ -58,7 +76,7 @@ function TChat() {
           changeSHead="Students"
           assignment="/TAssignment"
           chat="/TChat"
-          analytics="/TAnalytics"
+          // analytics="/TAnalytics"
         />
         <div className="Stud-Mainbody">
           <div className="Mainbody-head">
@@ -88,6 +106,11 @@ function TChat() {
               Send
             </button>
           </div>
+          <br />
+          <h2> Messages List</h2>
+          {newdata.slice(0, 7).map((row) => (
+            <div>{row.message}</div>
+          ))}
         </div>
       </div>
     </div>

@@ -28,7 +28,7 @@ function TAnalytics() {
           changeSHead="Students"
           assignment="/TAssignment"
           chat="/TChat"
-          analytics="/TAnalytics"
+          // analytics="/TAnalytics"
         />
       </div>
     </div>

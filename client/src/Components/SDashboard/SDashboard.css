@@ -12,6 +12,12 @@
   overflow: scroll;
 }
 
+.execflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .Dash {
   /* padding: 0.5rem 3.5rem; */
   color: white;

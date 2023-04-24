@@ -12,18 +12,11 @@ import {
   UilClipboardAlt,
   UilUsersAlt,
   // UilPackage,
-  UilChart,
+  // UilChart,
   // UilBubbleChart,
 } from "@iconscout/react-unicons";
 
-const Sidebar = ({
-  dashboard,
-  student,
-  changeSHead,
-  assignment,
-  chat,
-  analytics,
-}) => {
+const Sidebar = ({ dashboard, student, changeSHead, assignment, chat }) => {
   const [expanded, setExpaned] = useState(true);
   const SidebarData = [
     {
@@ -45,11 +38,6 @@ const Sidebar = ({
       icon: BubbleChart,
       heading: "Chat",
       LinkAdd: `${chat}`,
-    },
-    {
-      icon: UilChart,
-      heading: "Analytics",
-      LinkAdd: `${analytics}`,
     },
   ];
 

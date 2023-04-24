@@ -15,6 +15,7 @@ import SChat from "./Components/SDashboard/SChat";
 import TAssignment from "./Components/TDashboard/TAssignment";
 import TAnalytics from "./Components/TDashboard/TAnalytics";
 import TChat from "./Components/TDashboard/TChat";
+import FilesList from "./Components/TDashboard/FilesList";
 
 export default function App() {
   return (
@@ -25,10 +26,11 @@ export default function App() {
         <Route path="/TStudent" element={<TStudent />} />
         <Route path="/STeacher" element={<STeacher />} />
         <Route path="/SAssignment" element={<SAssignment />} />
-        <Route path="/SAnalytics" element={<SAnalytics />} />
+        {/* <Route path="/SAnalytics" element={<SAnalytics />} /> */}
         <Route path="/SChat" element={<SChat />} />
         <Route path="/TAssignment" element={<TAssignment />} />
-        <Route path="/TAnalytics" element={<TAnalytics />} />
+        <Route path="/list" element={<FilesList />} />
+        {/* <Route path="/TAnalytics" element={<TAnalytics />} /> */}
         <Route path="/TChat" element={<TChat />} />
       </Routes>
       <Menubar />

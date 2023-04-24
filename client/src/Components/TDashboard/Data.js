@@ -102,19 +102,19 @@ export const cardsData = [
 export const UpdatesData = [
   {
     img: img1,
-    name: "Andrew Thomas",
+    name: "Kanhaiya",
     noti: "has completed 1st Assignment.",
-    time: "25 seconds ago",
+    time: "25 minutes ago",
   },
   {
     img: img2,
-    name: "James Bond",
+    name: "Aryan",
     noti: "has submited all the Experiment.",
     time: "30 minutes ago",
   },
   {
-    img: img3,
-    name: "Iron Man",
+    img: img1,
+    name: "Kanhaiya",
     noti: "has submited 4 Experiment.",
     time: "2 hours ago",
   },
